@@ -6,6 +6,6 @@ Research interests: auditory brain-computer interfaces, EEG decoding, neural sig
 - [Download the PDF](Yuan_Liao_CV.pdf)
 - [Google Scholar](https://scholar.google.com.hk/citations?user=qMoPOPoAAAAJ&hl=zh-CN)
 
-This is the public version of the CV. Personal phone and referee contact details are intentionally omitted.
+This repository contains the complete current version of the CV.
 
 Last updated: September 2026.
