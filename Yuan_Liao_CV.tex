@@ -1,0 +1,260 @@
+%-------------------------
+% Academic CV - Yuan Liao
+% Style adapted to closely match CV (3).pdf
+%-------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{6pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.10in}
+\addtolength{\topmargin}{-0.62in}
+\addtolength{\textheight}{1.20in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Compact lists
+\setlist[itemize]{itemsep=1pt, parsep=0pt, topsep=2pt}
+
+% Section formatting
+\titleformat{\section}{
+	\vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.20in]}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\newcommand{\publication}[3]{
+	\item \small{
+		\textbf{#1} #2\\
+		#3
+	}\vspace{-2pt}
+}
+
+\begin{document}
+	
+	%----------HEADING----------
+	\begin{center}
+		\textbf{\Huge \scshape Yuan Liao} \\ \vspace{2pt}
+		\small
+		\faEnvelope\ \href{mailto:ly1022020619@163.com}{ly1022020619@163.com} \\
+		\faGraduationCap\ \href{https://scholar.google.com.hk/citations?user=qMoPOPoAAAAJ\&hl=zh-CN}{Google Scholar: Citations 196, h-index 7, i10-index 6} $|$
+		\faGithub\ \href{https://github.com/LiaoEuan}{GitHub} \\
+		\faUniversity\ The Chinese University of Hong Kong, Shenzhen
+	\end{center}
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Nanjing University of Posts and Telecommunications}{Aug. 2022 -- Jun. 2025}
+	{M.Eng. in Circuits and Systems; Double First-Class Discipline (A-)}{GPA: 3.93/5.00; Rank: 6/30}
+	
+	\resumeSubheading
+	{Nanjing University of Posts and Telecommunications}{Aug. 2018 -- Jun. 2022}
+	{B.Eng. in Automation}{GPA: 3.50/5.00; Rank: 18/149}
+	\resumeSubHeadingListEnd
+	
+	%-----------RESEARCH EXPERIENCE-----------
+	\section{Research Experience}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{The Chinese University of Hong Kong, Shenzhen}{Nov. 2024 -- Present}
+	{Research Assistant}{Shenzhen, China}
+	\resumeItemListStart
+	\resumeItem{\textbf{Supervisors:} Prof. Siqi Cai, Prof. Haizhou Li (IEEE Fellow)}
+	\resumeItem{\textbf{Activity:} Focused on auditory brain-computer interfaces for brain-controlled hearing aids. Key contributions include proposing SincAlignNet for EEG-audio alignment, FD-ARL for cross-subject auditory attention decoding, and BM-TSE for brainprint-modulated target speaker extraction.}
+	\resumeItem{\textbf{Outcomes:} One first-author manuscript under revision at \textit{IEEE Journal of Biomedical and Health Informatics} and two ICASSP 2026 papers published in IEEE Xplore.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{State Key Laboratory of Flexible Electronics, NJUPT}{May 2022 -- Present}
+	{Graduate Research Assistant}{Nanjing, China}
+	\resumeItemListStart
+	\resumeItem{\textbf{Supervisors:} Prof. Liya Huang, Prof. Qiang Zhao}
+	\resumeItem{\textbf{Activity:} Conducted cross-disciplinary research on flexible neural interfaces, wearable physiological sensors, and EEG-based BCI applications. My role involved designing BCI experimental paradigms, conducting human-subject experiments, and developing deep learning models for neural and physiological signal decoding.}
+	\resumeItem{\textbf{Outcomes:} One equal-contribution co-first-author paper published in \textit{Nature Sensors}; three published papers in \textit{Matter}, \textit{ACS Sensors}, and \textit{Science China Information Sciences}; and one first-author manuscript under revision at \textit{IEEE Transactions on Affective Computing}.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Nanjing University of Posts and Telecommunications}{May 2020 -- Oct. 2021}
+	{Undergraduate Researcher}{Nanjing, China}
+	\resumeItemListStart
+	\resumeItem{\textbf{Supervisor:} Prof. Liya Huang}
+	\resumeItem{\textbf{Activity:} Investigated EEG-based emergency braking intention detection. Responsibilities included experimental paradigm design, EEG data preprocessing, K-Order Propagation Number feature extraction, and SVM-based classification.}
+	\resumeItem{\textbf{Outcomes:} Published one co-first-author paper in \textit{Brain Sciences}.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	
+	%-----------PUBLICATIONS-----------
+	\section{Publications}
+	\begin{itemize}[leftmargin=0.15in]
+		
+		\small{\item[] \textit{Note: \underline{Yuan Liao} indicates the applicant; \textsuperscript{*} indicates equal-contribution co-first authors.}}
+		
+		\publication
+		{\href{https://www.nature.com/articles/s44460-026-00103-6}{Synergistic material--algorithm design enables robust auditory attention decoding brain-computer interface applications}}
+		{(\textit{Nature Sensors}, 2026; DOI: 10.1038/s44460-026-00103-6)}
+		{Yuzhe Gu\textsuperscript{*}, \underline{Yuan Liao}\textsuperscript{*}, Jingyu He, Haoxuan Yu, Guansheng Xing, Xiaotian Wang, Aoxi Yu, Qianhe Shu, Liya Huang, Shujun Liu, Keqiang Gao, Wei Huang, Qiang Zhao, et al. \textbf{Role: equal-contribution co-first author, second-listed.}}
+		
+		\publication
+		{Closed-loop correction reprogramming for fine-grained visual prompting}
+		{(\textit{Neural Networks}, Volume 202, Article 108991, 2026)}
+		{Xueyi Zhang\textsuperscript{*}, \underline{Yuan Liao}\textsuperscript{*}, Siqi Cai, Mingrui Lao, Haizhou Li. \textbf{Role: equal-contribution co-first author, second-listed.} DOI: 10.1016/j.neunet.2026.108991.}
+		
+		\publication
+		{FD-ARL: Feature Disentanglement with Adversarial-Reconstruction Learning for Cross-Subject Auditory Attention Decoding}
+		{(ICASSP 2026 -- IEEE International Conference on Acoustics, Speech and Signal Processing)}
+		{\underline{Yuan Liao}, Haoqi Hu, Siqi Cai, Haizhou Li. DOI: 10.1109/ICASSP55912.2026.11461770.}
+		
+		\publication
+		{Brainprint-Modulated Target Speaker Extraction}
+		{(ICASSP 2026 -- IEEE International Conference on Acoustics, Speech and Signal Processing)}
+		{Qiushi Han\textsuperscript{*}, \underline{Yuan Liao}\textsuperscript{*}, Youhao Si, Liya Huang. DOI: 10.1109/ICASSP55912.2026.11461698.}
+		
+		\publication
+		{Frequency-Based Alignment of EEG and Audio Signals Using Contrastive Learning and SincNet for Auditory Attention Detection}
+		{(\textit{IEEE Journal of Biomedical and Health Informatics}, under revision)}
+		{\underline{Yuan Liao}, Yuhong Zhang, Rui Dai, Yuanlin Dong, Yu Gu, Yang Yang, Liya Huang.}
+		
+		\publication
+		{CLDTA: Contrastive Learning based on Diagonal Transformer Autoencoder for Cross-Dataset EEG Emotion Recognition}
+		{(\textit{IEEE Transactions on Affective Computing}, under revision; arXiv preprint available)}
+		{\underline{Yuan Liao}, Shuqing Wang, Yuxiang Zhang, Yuhong Zhang, Wei Chen, Yuzhe Gu, Liya Huang.}
+		
+		\publication
+		{TrustCLIP: Learning from Noisy Labels via Semantic Label Verification and Trust-aligned Gradient Projection}
+		{(Proceedings of the 33rd ACM International Conference on Multimedia, 2025)}
+		{Xueyi Zhang, Peng Zhu, \underline{Yuan Liao}, Xiaoqiang Wang, Mingrui Lao, Siqi Cai, Yusheng Guo, Haizhou Li.}
+		
+		\publication
+		{The effect of speech representations on EEG-based auditory attention detection}
+		{(\textit{Pattern Recognition Letters}, 2026)}
+		{Haoqi Hu, \underline{Yuan Liao}, Siqi Cai, Haizhou Li.}
+		
+		\publication
+		{ASEAF: Attention-SincNet driven EEG-audio fused target speaker extraction network}
+		{(\textit{Biomedical Physics \& Engineering Express}, 2026)}
+		{Y. Yang, \underline{Yuan Liao}, Q. Han, J. Peng, Liya Huang.}
+		
+		\publication
+		{GCANet: Enhancing EEG-based Auditory Attention Decoding with Temporal Frequency GCN and Cross Attention Mechanisms}
+		{(\textit{Neuroscience}, 2025)}
+		{Rui Dai, \underline{Yuan Liao}, Qiushi Han, Yuanlin Dong, Yang Yang, Liya Huang.}
+		
+		\publication
+		{Stretchable organic electrochemical transistors for sustained high-fidelity electrophysiology and deep learning-assisted sleep monitoring}
+		{(\textit{Matter}, 2025)}
+		{Yuncong Pang, Yang Li, Yuzhe Gu, Bing Yu, Zhen Zhu, Xiaotian Wang, \underline{Yuan Liao}, Liya Huang, Qiang Zhao, et al.}
+		
+		\publication
+		{A stretchable, ionic conductive, and adhesive patch electrode with ultra-low on-skin impedance for electrophysiological signal recording}
+		{(\textit{Science China Information Sciences}, 2025)}
+		{Yang Li, Yuzhe Gu, Si Qian, Yuncong Pang, Aoxi Yu, Songwu Zheng, Weixia Xia, \underline{Yuan Liao}, Shujun Liu, Liya Huang.}
+		
+		\publication
+		{Microcrack-Enhanced PEDOT:PSS Textile for Rapid-Response, Stable, and Breathable Wearable Sensors}
+		{(\textit{ACS Sensors}, 2025)}
+		{Yuzhe Gu, Zixuan Zhang, Weilin Liu, \underline{Yuan Liao}, Wenfei Fei, Yuxiang Zhang, Tao Zhou, Yang Li, Liya Huang, Jiangxin Li.}
+		
+		\publication
+		{Emotion Recognition of EEG Signals Based on Contrastive Learning Graph Convolutional Model}
+		{(\textit{Journal of Neural Engineering}, 2024)}
+		{Yiling Zhang, \underline{Yuan Liao}, Wei Chen, Xiruo Zhang, Liya Huang.}
+		
+		\publication
+		{EEG-Based Emotion Recognition Using Graph Convolutional Neural Network with Dual Attention Mechanism}
+		{(\textit{Frontiers in Computational Neuroscience}, 2024)}
+		{Wei Chen, \underline{Yuan Liao}, Rui Dai, Yuanlin Dong, Liya Huang.}
+		
+		\publication
+		{Emergency Braking Intention Detect System Based on K-Order Propagation Number Algorithm: A Network Perspective}
+		{(\textit{Brain Sciences}, 2021)}
+		{Yuhong Zhang\textsuperscript{*}, \underline{Yuan Liao}\textsuperscript{*}, Yudi Zhang, Liya Huang. \textbf{Role: equal-contribution co-first author, second-listed.}}
+		
+	\end{itemize}
+	
+	
+	%-----------PATENTS-----------
+	\section{Patents}
+	\begin{itemize}[leftmargin=0.15in]
+		\resumeItem{\textbf{Noise-label-based multimodal recognition method, apparatus, device, storage medium, and program product.} Chinese invention patent application CN120726421A, published Sep. 30, 2025. Inventors: Xueyi Zhang, Siqi Cai, Haizhou Li, Haoqi Hu, \underline{Yuan Liao}.}
+		\resumeItem{\textbf{Event-based lip-reading method, apparatus, device, and storage medium.} Chinese invention patent application CN120635994A, published Sep. 12, 2025. Inventors: Xueyi Zhang, Siqi Cai, Haizhou Li, Haoqi Hu, \underline{Yuan Liao}.}
+		\resumeItem{\textbf{EEG-based auditory speech extraction model training method, apparatus, device, and storage medium.} Chinese invention patent application CN120673751A, published Sep. 19, 2025. Inventors: Siqi Cai, \underline{Yuan Liao}, Xueyi Zhang, Haoqi Hu, Haizhou Li.}
+	\end{itemize}
+	
+	%-----------AWARDS-----------
+	\section{Award \& Honors}
+	\begin{itemize}[leftmargin=0.15in]
+		\resumeItem{Huawei Cup: The 20th China Graduate Mathematical Modeling Competition, National Third Prize $|$ 2023}
+		\resumeItem{Second-Class Scholarship for Graduate Students $|$ 2023}
+		\resumeItem{First-Class Scholarship for Graduate Students $|$ 2022}
+		\resumeItem{National Encouragement Scholarship $|$ 2020, 2021}
+		\resumeItem{Third Prize in Jiangsu Province, National College Student Mathematical Modeling Competition $|$ 2020}
+	\end{itemize}
+	
+	%-----------TECHNICAL SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Programming Languages:} Python, MATLAB, C/C++ \\
+				\textbf{Deep Learning Models:} Transformers, GNNs, CNNs, Autoencoders, Contrastive Learning, Adversarial Learning \\
+				\textbf{Frameworks \& Libraries:} PyTorch, MNE-Python, Scikit-learn, NumPy, Pandas \\
+				\textbf{Signal Processing:} EEG preprocessing, time-frequency analysis, auditory attention decoding, physiological signal analysis \\
+				\textbf{Languages:} Chinese (Native), English (IELTS 6.5)
+		}}
+	\end{itemize}
+	
+	%-----------TEACHING EXPERIENCE-----------
+	\section{Teaching Experience}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Teaching Assistant, Digital Circuits}{Fall 2023}
+	{NJUPT-Portland State University Joint Program}{Nanjing, China}
+	\resumeItemListStart
+	\resumeItem{Provided instruction and support in an all-English environment for third-year undergraduate students.}
+	\resumeItem{Led 40 lab sessions in assembly language programming, graded assignments, and conducted Q\&A sessions.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+
+\end{document}
